@@ -24,10 +24,10 @@ const delitel = (num1, num2) => {
 }
 const gcd = () => {
     console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
-  console.log(`Hello, ${name}!\n`);
-  console.log("Find the greatest common divisor of given numbers.");
-  for (let i = 0; i < 3; i += 1) {
+    const name = readlineSync.question("May I have your name? ");
+    console.log(`Hello, ${name}!\n`);
+    console.log("Find the greatest common divisor of given numbers.");
+    for (let i = 0; i < 3; i += 1) {
     const num1 = random(1, 100);
     const num2 = random(1, 100);
     console.log(`Question: ${num1} ${num2}`);
