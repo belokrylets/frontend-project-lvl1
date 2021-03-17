@@ -11,14 +11,14 @@ const isNumberEven = (num) => {
 const even = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!\n`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const num = random(1, 30);
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
     if (isNumberEven(num) === answer) {
-      console.log('Correct!');
+      console.log('Correct!\n');
     } else {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isNumberEven(num)}'.\nLet's try again, ${name}!`);
     }
