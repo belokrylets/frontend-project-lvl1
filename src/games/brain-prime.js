@@ -27,6 +27,6 @@ const prime = () => {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPime(num)}'.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default prime;

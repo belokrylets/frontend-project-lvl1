@@ -17,6 +17,6 @@ const gamelogic = (task, answer) => {
       return console.log(`'${useranswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default gamelogic;

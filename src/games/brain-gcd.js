@@ -2,23 +2,27 @@ import readlineSync from 'readline-sync';
 
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const delitel = (num1, num2) => {
-  if (num1 === num2) {
-    return num1;
-  }
+  let result = 0;
   if (num1 > num2) {
     for (let i = num2; i >= 1; i -= 1) {
       if (num1 % i === 0 && num2 % i === 0) {
-        return i;
+        result = i;
+        break;
       }
     }
   }
   if (num1 < num2) {
     for (let i = num1; i >= 1; i -= 1) {
       if (num1 % i === 0 && num2 % i === 0) {
-        return i;
+        result = i;
+        break;
       }
     }
   }
+  if (num1 === num2) {
+    result = num1;
+  }
+  return result;
 };
 const gcd = () => {
   console.log('Welcome to the Brain Games!');
@@ -36,6 +40,6 @@ const gcd = () => {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${delitel(num1, num2)}'.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default gcd;

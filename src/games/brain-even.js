@@ -23,6 +23,6 @@ const even = () => {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isNumberEven(num)}'.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default even;

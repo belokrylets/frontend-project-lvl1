@@ -1,10 +1,6 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const arrnum1 = random(1, 50);
-const arrnum2 = random(1, 50);
-const arrnum3 = random(1, 50);
-
 const step = random(2, 5);
 const randompog = (num) => {
   const arr = [];
@@ -16,26 +12,26 @@ const randompog = (num) => {
 };
 
 const progression = () => {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
-  console.log("What number is missing in the progression?");
-  let result = "";
+  console.log('What number is missing in the progression?');
+  let result = '';
   for (let i = 0; i < 3; i += 1) {
     const lostNum = random(2, 5);
-    const arrnum1 = random(1, 50);
-    const arr1 = randompog(arrnum1);
-    arr1[lostNum] = "..";
-    result = arr1.join(" ");
-    let missingNum = arrnum1 + step * lostNum;
+    const arrnum = random(1, 50);
+    const arr1 = randompog(arrnum);
+    arr1[lostNum] = '..';
+    result = arr1.join(' ');
+    const missingNum = arrnum + step * lostNum;
     console.log(`Question: ${result}`);
-    const answer = readlineSync.question("Your answer: ");
+    const answer = readlineSync.question('Your answer: ');
     if (String(missingNum) === answer) {
-      console.log("Correct!\n");
+      console.log('Correct!\n');
     } else {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${missingNum}'.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default progression;
