@@ -2,20 +2,24 @@
 [![Actions Status](https://github.com/belokrylets/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/belokrylets/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/belokrylets/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/35d7a0edfc28c10f6b9d/maintainability" /></a>
 
-Getting started
-sudo npm install -g frontend-victorlitvinenko-lvl1
+## Getting started
+```sudo npm install -g frontend-victorlitvinenko-lvl1```
 
-Even numbers
-brain-even
+### Even numbers
+```brain-even```
 
-Result of the expression
-brain-calc
 
-Result of the expression
-brain-gcd
+### Result of the expression
+```brain-calc```
 
-Missing numbers in the progression
-brain-progression
 
-Prime numbers
-brain-prime
+### Result of the expression
+```brain-gcd```
+
+
+### Missing numbers in the progression
+```brain-progression```
+
+
+### Prime numbers
+```brain-prime```
