@@ -13,14 +13,19 @@
 ### Result of the expression
 ```brain-calc```
 
+[![asciicast](https://asciinema.org/a/EivHGWKNZYAGYkhAAoGawbPCT.svg)](https://asciinema.org/a/EivHGWKNZYAGYkhAAoGawbPCT)
 
 ### Result of the expression
 ```brain-gcd```
 
+[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
 
 ### Missing numbers in the progression
 ```brain-progression```
 
+[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
 
 ### Prime numbers
 ```brain-prime```
+
+[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
