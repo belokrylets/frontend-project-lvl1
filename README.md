@@ -8,7 +8,7 @@
 ### Even numbers
 ```brain-even```
 
-[![asciicast](https://asciinema.org/a/DlWgbhYOPwbE3jnt4UE1XxVkJ.svg)](https://asciinema.org/a/DlWgbhYOPwbE3jnt4UE1XxVkJ)
+[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
 
 ### Result of the expression
 ```brain-calc```
