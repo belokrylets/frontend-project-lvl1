@@ -23,9 +23,9 @@
 ### Missing numbers in the progression
 ```brain-progression```
 
-[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
+[![asciicast](https://asciinema.org/a/K6PiGbQzoIsSB9uGvIWDEujec.svg)](https://asciinema.org/a/K6PiGbQzoIsSB9uGvIWDEujec)
 
 ### Prime numbers
 ```brain-prime```
 
-[![asciicast](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn.svg)](https://asciinema.org/a/YjmtXTRabakY7nLx4yMOajEWn)
+[![asciicast](https://asciinema.org/a/afY5dMeKaKIRIRLUJqyaNMNpZ.svg)](https://asciinema.org/a/afY5dMeKaKIRIRLUJqyaNMNpZ)
