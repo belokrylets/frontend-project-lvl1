@@ -1,45 +1,34 @@
-import readlineSync from 'readline-sync';
+import { random } from './index.js';
 
-const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const delitel = (num1, num2) => {
+export const task = 'Find the greatest common divisor of given numbers.';
+
+export const correct = (num) => {
+  const arr = num.split(' ');
   let result = 0;
-  if (num1 > num2) {
-    for (let i = num2; i >= 1; i -= 1) {
-      if (num1 % i === 0 && num2 % i === 0) {
+  if (arr[0] > arr[1]) {
+    for (let i = arr[1]; i >= 1; i -= 1) {
+      if (arr[0] % i === 0 && arr[1] % i === 0) {
         result = i;
         break;
       }
     }
   }
-  if (num1 < num2) {
-    for (let i = num1; i >= 1; i -= 1) {
-      if (num1 % i === 0 && num2 % i === 0) {
+  if (arr[0] < arr[1]) {
+    for (let i = arr[0]; i >= 1; i -= 1) {
+      if (arr[0] % i === 0 && arr[1] % i === 0) {
         result = i;
         break;
       }
     }
   }
-  if (num1 === num2) {
-    result = num1;
+  if (arr[0] === arr[1]) {
+    result = arr[1];
   }
-  return result;
+  return `${result}`;
 };
-const gcd = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
-  console.log('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    const num1 = random(1, 100);
-    const num2 = random(1, 100);
-    console.log(`Question: ${num1} ${num2}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (String(delitel(num1, num2)) === answer) {
-      console.log('Correct!\n');
-    } else {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${delitel(num1, num2)}'.\nLet's try again, ${name}!`);
-    }
-  }
-  return console.log(`Congratulations, ${name}!`);
+
+export const gcd = () => {
+  const num1 = random(1, 10);
+  const num2 = random(1, 10);
+  return `${num1} ${num2}`;
 };
-export default gcd;
