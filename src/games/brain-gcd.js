@@ -5,24 +5,25 @@ export const task = 'Find the greatest common divisor of given numbers.';
 export const correct = (num) => {
   const arr = num.split(' ');
   let result = 0;
-  if (arr[0] > arr[1]) {
-    for (let i = arr[1]; i >= 1; i -= 1) {
-      if (arr[0] % i === 0 && arr[1] % i === 0) {
+  const [num1, num2] = arr;
+  if (num1 > num2) {
+    for (let i = num2; i >= 1; i -= 1) {
+      if (num1 % i === 0 && num2 % i === 0) {
         result = i;
         break;
       }
     }
   }
-  if (arr[0] < arr[1]) {
-    for (let i = arr[0]; i >= 1; i -= 1) {
-      if (arr[0] % i === 0 && arr[1] % i === 0) {
+  if (num1 < num2) {
+    for (let i = num1; i >= 1; i -= 1) {
+      if (num1 % i === 0 && num2 % i === 0) {
         result = i;
         break;
       }
     }
   }
-  if (arr[0] === arr[1]) {
-    result = arr[1];
+  if (num1 === num2) {
+    result = num1;
   }
   return `${result}`;
 };
